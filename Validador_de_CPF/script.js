@@ -5,6 +5,11 @@ function validaCPF(cpf) {
 	if (cpf.length != 11) {
 		return false;
 	} else {
+		var numeros = cpf.substring(0, 9);
+		var digitos = cpf.substring(9);
+
+		console.log("numeros do cpf " + numeros);
+		console.log("digito do cpf " + digitos);
 		
 		return true;
 	}
